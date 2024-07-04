@@ -1,76 +1,69 @@
-**THE MAZE PROJECT - MVP**
+THE MAZE PROJECT - MVP
 (A 3D Game created using SDL2)
 
-### Minimum Viable Product (MVP) for the Maze Game with SDL2:
+Minimum Viable Product (MVP) for the Maze Game with SDL2:
 
-#### Explanation:
-- **Walls**:
-  - **Objective**: Create a 2D array to represent the maze and draw walls using SDL2 graphics library.
-  - **Details**:
-    - Define a 2D array to store the maze data.
-    - Use SDL2 graphics library to draw walls by rendering rectangles or lines.
 
-- **Orientation**:
-  - **Objective**: Use the arrow keys to control the movement and rotation of the player in the maze.
-  - **Details**:
-    - Implement a function to handle user input using SDL_Event.
-    - Update the player's position and orientation based on the input received from the user.
+Explanation:
+Walls: Create a 2D array to represent the maze and draw walls using SDL2 graphics library. The walls should be represented by rectangles or lines.
+Define a 2D array to store the maze data.
 
-- **Move**:
-  - **Objective**: Implement basic movement logic for the player.
-  - **Details**:
-    - Allow the player to move forward, backward, left, and right in the maze.
-    - Implement a function to update the player's position based on the current orientation and input received from the user.
+Use SDL2 graphics library to draw walls by rendering rectangles or lines.
 
-- **Ouch**:
-  - **Objective**: Add collision detection between the player and the walls.
-  - **Details**:
-    - Implement a function to check for collision between the player and the walls.
-    - If the player collides with a wall, stop the player's movement.
+Orientation: Use the arrow keys to control the movement and rotation of the player in the maze. You can use SDL_Event to handle user input.
+Implement a function to handle user input using SDL_Event.
 
-- **Parser**:
-  - **Objective**: Create a simple parser to read the maze data from a text file and store it in a 2D array.
-  - **Details**:
-    - Implement a function to read the maze data from a text file.
-    - Store the maze data in the 2D array.
+Update the player's position and orientation based on the input received from the user.
 
-- **Draw the Map**:
-  - **Objective**: Draw the maze using the maze data stored in the 2D array.
-  - **Details**:
-    - Use the maze data stored in the 2D array to draw the maze.
-    - Use different colors to distinguish between the walls and ground/ceiling.
+Move: Implement basic movement logic for the player. Allow the player to move forward, backward, left, and right in the maze.
+Implement a function to update the player's position based on the current orientation and input received from the user.
 
-- **Textures**:
-  - **Objective**: Add basic textures to the walls using SDL2's texture rendering functions.
-  - **Details**:
-    - Implement a function to load wall textures.
-    - Use SDL2's texture rendering functions to render textures on the walls.
+Ouch: Add collision detection between the player and the walls. The player should not be able to move through the walls. If the player collides with a wall, stop the player's movement.
+
+Implement a function to check for collision between the player and the walls.
+
+If the player collides with a wall, stop the player's movement.
+
+Parser: Create a simple parser to read the maze data from a text file and store it in a 2D array.
+
+Implement a function to read the maze data from a text file.
+
+Store the maze data in the 2D array.
+
+Draw the Map: Draw the maze using the maze data stored in the 2D array. You can use different colors for the walls and ground/ceiling to make them visually distinct.
+
+Use the maze data stored in the 2D array to draw the maze.
+
+Use different colors to distinguish between the walls and ground/ceiling.
+
+Textures: Add basic textures to the walls using SDL2's texture rendering functions.
+
+Implement a function to load wall textures.
+
+Use SDL2's texture rendering functions to render textures on the walls.
 
 These are the minimum features required to implement a basic maze game with SDL2.
 
-### Data Modelling
+USER STORY
 
-#### USER STORY
-End users want to play a maze game using SDL2 to have fun solving the maze and challenging themselves to improve their speed and accuracy.
+- Play the Maze Game
+As an end user, I want to play a maze game using SDL2, so that I can have fun solving the maze and challenge myself to improve my speed and accuracy.
 
-- **Start of the Game**:
-  - Users want to see a main menu allowing them to start a new game, load a saved game, or quit.
-  - Upon starting a new game, they want to select the difficulty level of the maze, including the size and number of obstacles.
+- Main Menu Options
+As an end user, when I start the game, I want to see a main menu with options to start a new game, load a saved game, or quit the game. If I choose to start a new game, I want to select the difficulty level of the maze, including its size and the number of obstacles.
 
-- **In-Game Experience**:
-  - Users want to see a maze on the screen with a character they control using arrow keys.
-  - The character should move smoothly and quickly, without lag.
-  - A timer should count down the time to complete the maze, and a score should reflect their progress.
+- In-Game Experience
+As an end user, once the game starts, I want to see a maze on the screen with a character that I can control using the arrow keys. I want the character to move smoothly and quickly, without any lag or delay. I also want to see a timer that counts down the time I have to complete the maze, and a score that reflects my progress through the maze.
 
-- **Gameplay Elements**:
-  - Users want to collect coins or rewards to increase their score.
-  - They also want to encounter obstacles that slow them down or make it harder to reach the end.
+- Collect Rewards
+As an end user, while navigating through the maze, I want to collect coins or other rewards to increase my score. I also want to encounter obstacles that will slow me down or make it harder to reach the end of the maze.
 
-- **End of the Game**:
-  - Upon reaching the end of the maze, users want a message congratulating them, displaying their final score and time.
-  - They want the option to save their game to play again later.
+- Game Completion
+As an end user, when I reach the end of the maze, I want to see a congratulatory message that displays my final score and the time it took me to complete the maze. I also want the option to save my game, so that I can come back and play again later.
 
-- **Audio and Visuals**:
-  - Users want sound effects for actions like collecting coins or hitting obstacles.
-  - They want music that adds to the excitement and challenge.
-  - The game should be visually appealing, with high-quality graphics and animations to keep them engaged.
+- Audio Feedback
+As an end user, I want to hear sound effects that correspond to my actions, such as collecting coins or hitting obstacles. I also want to hear music that adds to the excitement and challenge of the game.
+
+- Visual Appeal
+As an end user, I want the game to be visually appealing, with high-quality graphics and animations that make it fun to play and keep me engaged throughout the game.
+
